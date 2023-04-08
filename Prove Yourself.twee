@@ -1,0 +1,434 @@
+:: StoryTitle
+Prove Yourself
+
+
+:: StoryData
+{
+  "ifid": "854806D2-B479-46AC-B7F1-BA18551BBE6F",
+  "format": "Harlowe",
+  "format-version": "3.3.5",
+  "start": "Beginning",
+  "zoom": 1
+}
+
+
+:: 1 {"position":"400,750","size":"100,100"}
+"You fool!" he shouts at you as he throws a spiral notebook at you. You lose (text-colour:red)[4 HP].
+
+(set: $HP to it -4)
+Your HP is (print: $HP)
+
+(if:$HP < 1)[ 
+[[Game-Over]]
+]
+
+(if: $HP >0)[
+You quickly respond with 
+[[2]]
+[[None]]
+]
+
+
+:: 11 {"position":"500,0","size":"100,100"}
+An inflated beach ball is blasted towards your head. It was only a beach ball, but it still hit you in the head. You lose (text-colour:red)[one health]. 
+
+(set: $HP to it -1)
+Your HP is (print: $HP)
+
+(if:$HP < 1)[ 
+[[Game-Over]]
+]
+
+(if: $HP >0)[
+You try a different number.
+
+[[4]]
+[[7]]
+[[9]]
+]
+
+
+:: 2 {"position":"300,750","size":"100,100"}
+"Wrong" he yells (maybe he isn't as nice as he appeared). He then throws a pen at you.. You lose (text-colour:red)[4 HP].
+
+(set: $HP to it -4)
+Your HP is (print: $HP)
+
+(if:$HP < 1)[ 
+[[Game-Over]]
+]
+
+(if: $HP >0)[
+You quickly respond with
+[[None]]
+[[1]]
+]
+
+
+:: 30 {"position":"300,150","size":"100,100"}
+A flame shoots out of the door and burns your arm. You lose (text-colour:red)[two health].
+
+(set: $HP to it -2)
+Your HP is (print: $HP)
+
+(if:$HP < 1)[ 
+[[Game-Over]]
+]
+
+(if: $HP >0)[
+You try a different number.
+
+[[34]]
+[[36]]
+[[40]]
+]
+
+
+:: 34 {"position":"100,300","size":"100,100"}
+This door opens, but you feel the cold air intensify. You feel that you are getting close to the dungeon's boss, (text-colour:red)[Ralph].
+
+Sprawled across the room were various weapons. You don't need these weapons. You have your own trusty sword and shield. 
+
+In front of you lies a table with a knob to turn. You can turn it North, East, South, or West. It is already facing East so you figure that is not the correct direction. As you turn the knob counter-clockwise, you notice an image on the wall also rotates. Before you turn the knob all the way North, you pause to think. You see numbers on the wall, including the number 9, 7, and 11. The image that is rotating looks like the number 1. You've made up your mind. You turn the dial
+
+[[North]]
+[[East]]
+[[South]]
+[[West]]
+
+
+:: 36 {"position":"400,150","size":"100,100"}
+A flame shoots out of the door and burns your arm. You lose (text-colour:red)[two health].
+
+(set: $HP to it -2)
+Your HP is (print: $HP)
+
+(if:$HP < 1)[ 
+[[Game-Over]]
+]
+
+(if: $HP >0)[
+You try a different number.
+
+[[30]]
+[[34]]
+[[40]]
+]
+
+
+:: 4 {"position":"300,0","size":"100,100"}
+A flyswatter flings from the wall and slaps you on the arm. You lose (text-colour:red)[one health].
+
+(set: $HP to it -1)
+Your HP is (print: $HP)
+
+(if:$HP < 1)[ 
+[[Game-Over]]
+]
+
+(if: $HP >0)[
+You try a different number.
+
+[[7]]
+[[9]]
+[[11]]
+]
+
+
+:: 40 {"position":"500,150","size":"100,100"}
+A flame shoots out of the door and burns your arm. You lose (text-colour:red)[two health].
+
+(set: $HP to it -2)
+Your HP is (print: $HP)
+
+
+(if:$HP < 1)[ 
+[[Game-Over]]
+]
+
+(if: $HP >0)[
+You try a different number.
+
+[[30]]
+[[34]]
+[[36]]
+]
+
+
+:: 7 {"position":"400,0","size":"100,100"}
+A wrench falls from the ceiling onto your hand. You lose (text-colour:red)[one health].
+
+(set: $HP to it -1)
+Your HP is (print: $HP)
+
+(if:$HP < 1)[ 
+[[Game-Over]]
+]
+
+(if: $HP >0)[
+You try a different number.
+
+[[4]]
+[[9]]
+[[11]]
+]
+
+
+:: 9 {"position":"100,150","size":"100,100"}
+You hear a chime go off and a drawer next to the door open. Inside the drawer is a key to next room. Feeling confident, you grab the key and press on!
+
+In the next room you feel an ice cold chill. All across the wall are mathematical symbols. You understand. This dungeon is based on mathematical algorithms and proofs. You head up to the next door to find a sequence written. The sequence is
+
+(text-colour:blue)[1, 1, 2, 3, 5, 8, 13, 21, ...]
+
+You see a tablet with numbers on it. You need to enter the next number in the sequence.
+
+[[30]]
+[[34]]
+[[36]]
+[[40]]
+
+
+
+:: 91 {"position":"300,450","size":"100,100"}
+"Bah! 91 is divisible by 7. He throws a calculator at you. 
+
+You lose (text-colour:red)[2 HP].
+
+(set: $HP to it -2)
+Your HP is (print: $HP)
+
+(if:$HP < 1)[ 
+[[Game-Over]]
+]
+
+
+(if: $HP >0)[
+You try again.
+
+[[93]]
+[[97]]
+[[99]]
+]
+
+
+:: 93 {"position":"400,450","size":"100,100"}
+"Bah! 93 is divisible by 3. He throws a calculator at you. 
+
+You lose (text-colour:red)[4 HP].
+
+(set: $HP to it -4)
+Your HP is (print: $HP)
+
+(if:$HP < 1)[ 
+[[Game-Over]]
+]
+
+(if: $HP >0)[
+
+You try again.
+
+[[91]]
+[[97]]
+[[99]]
+]
+
+
+:: 97 {"position":"100,600","size":"100,100"}
+"That is correct." he says. "Perhaps that was too simple. Next question!"
+"If I show a result is true for one case, and then show that result is also true for a general term that follows the same pattern, what type of proof would that be?"
+
+You answer immediately with
+
+[[Induction]]
+[[Direct]]
+[[Contradiction]]
+
+
+:: 99 {"position":"500,450","size":"100,100"}
+"Bah! 99 is divisible by 9. He throws a calculator at you. 
+
+You lose (text-colour:red)[4 HP].
+
+(set: $HP to it -4)
+Your HP is (print: $HP)
+
+(if:$HP < 1)[ 
+[[Game-Over]]
+]
+
+(if: $HP >0)[
+You try again.
+
+[[91]]
+[[93]]
+[[97]]
+]
+
+
+:: Beginning {"position":"100,0","size":"100,100"}
+As you enter the dungeon, a calm washes over you. You are feeling confident that you will be able to finally defeat the monster that has terrorized the local village. This monster's name was (text-colour:red)[Ralph]. It was not a very menacing name. Perhaps that is why you are calm.
+
+Your health is (set: $HP to 20)(print:$HP).
+
+The first door to the dungeon offers a riddle. You need to solve the riddle in order to find the key to the next room.
+
+Written on the door was the inscription 
+(text-colour:white)["Multiply me by 4 and add 7. Then you get 3 more than 40. What am I?"]
+
+You answer 
+[[4]]
+[[7]]
+[[9]]
+[[11]]
+
+(if:$HP < 1)[Your health points have been reduced to zero. A plucky band of heroes come to your aid to rescue you and bring you back to the city to heal up. 
+(reload:)
+]
+
+
+:: Contradiction {"position":"400,600","size":"100,100"}
+"Bah!" he shouts at you as he throws a textbook. You lose (text-colour:red)[4 HP].
+
+(set: $HP to it -4)
+Your HP is (print: $HP)
+
+(if:$HP < 1)[ 
+[[Game-Over]]
+]
+
+(if: $HP >0)[
+You apologize and respond with
+
+[[Direct]]
+[[Induction]]
+]
+
+
+:: Direct {"position":"300,600","size":"100,100"}
+"You fool!" he shouts at you as he throws an eraser at you. You lose (text-colour:red)[4 HP].
+
+(set: $HP to it -4)
+Your HP is (print: $HP)
+
+(if:$HP < 1)[ 
+[[Game-Over]]
+]
+
+(if: $HP >0)[
+You apologize and give him the answer
+[[Induction]]
+[[Contradiction]]
+]
+
+
+:: East {"position":"400,300","size":"100,100"}
+You instantly regret your choice, as you remember that this is where the dial had been spun to originally. A trap that feels (and looks) like a sack of potatoes swings from the ceiling and knocks you a few feet back. You lose (text-colour:red)[3 HP]
+
+(set: $HP to it -3)
+Your HP is (print: $HP)
+
+(if:$HP < 1)[ 
+[[Game-Over]]
+]
+
+(if: $HP >0)[
+You stand up slowly. You need a moment to catch your breath. You decide to give the dial another go. As you get up, you notice the numbers again. There is a 7, a 9, and an 11. You then begin to think about what these letters start with.
+
+[[North]]
+[[West]]
+[[South]]
+]
+
+
+:: Game-Over {"position":"900,300","size":"100,100"}
+(text-colour:navy)+(bg:#ffec99)[Your health points have been reduced to zero. A plucky band of heroes come to your aid to rescue you and bring you back to the city to heal up.
+
+(text-style:"bold","fade-in-out")[(text-colour:red)[Game Over]]
+
+Click the button below to go back to the beginning!
+[[Beginning]] 
+]
+
+
+:: Induction {"position":"100,750","size":"100,100"}
+"Wow. I did not expect you to get that correct. Are people more appreciative of math these days? Let me ask one last question."
+
+"Give a counter example to the statement that for every positive integer, n^^2^^ + 3n + 8 is even."
+
+You ponder his statement for a moment, and then reply with
+
+[[None]]
+[[1]]
+[[2]]
+
+
+:: None {"position":"100,900","size":"100,100"}
+(text-colour:navy)+(bg:#d0ebff)[You are confident that there is no counter example. The statement he gave you is true. You set out to prove it to him, impressing him along the way. 
+
+You then invite him back to the village to get some pizza. He joyfully accepts. (text-colour:red)[Ralph] was no monster. He just needed someone to understand him.
+
+The End]
+
+
+:: North {"position":"300,300","size":"100,100"}
+You hear wind rattle from the ceiling a dart flies from the wall. It hits you in the leg. You lose (text-colour:red)[2 HP].
+
+(set: $HP to it -2)
+Your HP is (print: $HP)
+
+(if:$HP < 1)[ 
+[[Game-Over]]
+]
+(if: $HP >0)[
+You pluck the dart out of your leg and apply pressure to stop the bleeding. Luckily you brought some bandages with you. Your leg hurts, but you've had it worse. You dust yourself off and try again. As you get up, you notice the numbers again. There is a 7, a 9, and an 11. You then begin to think about what these letters start with.
+
+[[East]]
+[[West]]
+[[South]]
+]
+
+
+:: South {"position":"500,300","size":"100,100"}
+A trap door from above opens and drops marbles on your head. That was unpleasant. You lose (text-colour:red)[1 HP].
+
+(set: $HP to it -1)
+Your HP is (print: $HP)
+
+(if:$HP < 1)[ 
+[[Game-Over]]
+]
+
+(if: $HP >0)[
+You stand up slowly. You need a moment to catch your breath. You decide to give the dial another go. As you get up, you notice the numbers again. There is a 7, a 9, and an 11. You then begin to think about what these letters start with.
+
+[[North]]
+[[East]]
+[[West]]
+]
+
+
+:: West {"position":"100,450","size":"100,100"}
+You realized that no number begins with the letter W. The number 1 was there to give a phonetic hint. As you continue down the stairs, you wonder what sort of creature (text-colour:red)[Ralph] was. Perhaps he was a lonely math monster. 
+
+His riddles weren't difficult to figure out. 
+(if:$HP < 20)[His traps didn't even hurt that much.]
+
+This next door opens swiftly. For a moment, you froze. You have come face to face with the dreaded monster (text-colour:red)[Ralph].
+
+He wasn't a monster. He looked like an average person. His room looked like a glorified bedroom, complete with a desk and books. 
+
+"Ah ha! I knew somebody would find me. Come in!" said (text-colour:red)[Ralph].
+"You must be cold. Please come sit by the fire." 
+
+I started walking with him and asking him who he was and why he lived in a dungeon. He explained that he was tired of people making fun of him for having two calculators in his back pack so he decided to live in isloation. He only set those traps for people he was afraid would harrass him. You start to explain that people will no longer juge him for his use of calculations, but he become defensive. 
+
+"If that is true, prove to me that you can handle my riddles. What is the largest prime number less than 100?"
+
+You answer:
+
+[[91]]
+[[93]]
+[[97]]
+[[99]]
+
